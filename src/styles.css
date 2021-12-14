@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  font-family: "Noticia Text", sans-serif;
+  text-align: center;
+  padding: 2px 0;
+}
+
+input {
+  background: transparent;
+  border: none;
+  margin-bottom: 4vmin;
+  /* border: 2px solid #a7f3d0; */
+  border-radius: 2rem;
+  margin-left: 2vmin;
+}
+
+#drawer-toggle {
+  position: absolute;
+  opacity: 0;
+}
+
+#drawer-toggle-label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  left: 0px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  position: fixed;
+  background: rgba(255, 255, 255, 0);
+  z-index: 1;
+}
+
+/* adds our "hamburger" menu icon */
+
+#drawer-toggle-label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  background: #8d8d8d;
+  left: 13px;
+  top: 18px;
+  box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d;
+}
+
+.btn {
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
